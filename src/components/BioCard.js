@@ -7,6 +7,8 @@ import {
   } from '@ionic/react';
 import dayjs from 'dayjs'
 import { calculateBios } from '../calculations'
+import BioChart from './BioChart';
+import './BioCard.css'
 
 const formatDate = (isoString) => dayjs(isoString).format('D MMM YYYY')
 
@@ -18,9 +20,10 @@ const BioCard = ({ DOB, targetDate }) => {
             <IonCardTitle>{formatDate(targetDate)}</IonCardTitle>
           </IonCardHeader>
           <IonCardContent>
-            <p>Physical: {physical.toFixed(4)}%</p>
-            <p>Emotional: {emotional.toFixed(4)}%</p>
-            <p>Intellectual: {intellectual.toFixed(4)}%</p>
+            <BioChart DOB={DOB} targetDate={targetDate} />
+            <p className="physical">Physical: {physical.toFixed(4)}%</p>
+            <p className="emotional">Emotional: {emotional.toFixed(4)}%</p>
+            <p className="intellectual">Intellectual: {intellectual.toFixed(4)}%</p>
           </IonCardContent>
         </IonCard>
     )
