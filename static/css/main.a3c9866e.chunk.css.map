@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack://src/components/BioCard.css"],"names":[],"mappings":"AAAA,WACI,SACJ,CACA,UACI,WACJ,CACA,cACI,UACJ","file":"main.a3c9866e.chunk.css","sourcesContent":[".emotional {\r\n    color: red\r\n}\r\n.physical {\r\n    color: green\r\n}\r\n.intellectual {\r\n    color: blue\r\n}"]}
