@@ -2,10 +2,13 @@
   "name": "biorhythm-calculator",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://banhawy.github.io/Biorythm-Calculator-App",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test"
+    "test": "react-scripts test",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "@capacitor/android": "2.4.7",
@@ -19,6 +22,7 @@
   },
   "devDependencies": {
     "@capacitor/cli": "2.4.7",
+    "gh-pages": "^3.1.0",
     "react-scripts": "4.0.3"
   },
   "eslintConfig": {
