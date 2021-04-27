@@ -23,6 +23,7 @@ function App() {
         </IonToolbar>
       </IonHeader>
       <IonContent className="ion-padding">
+      {DOB && (<BioCard targetDate={targetDate} DOB={DOB}/>)}
         <IonItem>
           <IonLabel position="stacked">Date of Birth: </IonLabel>
           <IonDatetime displayFormat="DD-MMM-YYYY"
@@ -37,7 +38,6 @@ function App() {
             onIonChange={(e) => setTargetDate(e.detail.value)} 
           />
         </IonItem>
-        {DOB && (<BioCard targetDate={targetDate} DOB={DOB}/>)}
       </IonContent>
     </IonApp>
   );

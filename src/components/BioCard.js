@@ -8,7 +8,7 @@ import {
 import dayjs from 'dayjs'
 import { calculateBios } from '../calculations'
 
-const formatDate = (isoString) => dayjs(isoString).format('D MM YYYY')
+const formatDate = (isoString) => dayjs(isoString).format('D MMM YYYY')
 
 const BioCard = ({ DOB, targetDate }) => {
     const { physical, emotional, intellectual } = calculateBios(DOB, targetDate)
